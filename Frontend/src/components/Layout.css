@@ -1,0 +1,13 @@
+.main-content {
+  margin-top: 0rem;
+  padding-left: 310px; /* p-6 */
+  padding-right: 20px; /* p-6 */
+  padding-top: 20px; /* p-6 */
+  padding-bottom: 20px; /* p-6 */
+  width: 100%;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}

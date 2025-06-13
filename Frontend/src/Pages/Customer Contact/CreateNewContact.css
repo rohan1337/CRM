@@ -1,0 +1,213 @@
+/* Leads Page Header */
+
+.header-container {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.contact-heading {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
+}
+
+.header-container-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.header-container-buttons button {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+}
+
+.cancel-button {
+	background-color: #D32F2F;
+	transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+	background-color: #b71c1c;
+}
+
+.save-button {
+	background-color: #4caf50;
+	transition: background-color 0.3s;
+}
+
+.save-button:hover {
+	background-color: #388e3c;
+}
+
+.save-and-new-button {
+	background-color: #2196f3;
+	transition: background-color 0.3s;
+}
+
+.save-and-new-button:hover {
+	background-color: #1976d2;
+}
+
+/* Contact Information Basic Structure */ 
+/* Address Information Basic Structure */
+
+.contact-informations-container,
+.address-information-container {
+	background-color: #fff;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.contact-informations-heading h1,
+.address-information-heading h1 {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
+	padding: 20px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+/* Contact Information Main Content Styles */
+
+.contact-informations-form form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"contactids firstnames lastnames"
+		"departments contactnames emails"
+		"phonenos . ."
+		"note note note";
+	gap: 18px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.contactids {
+	grid-area: contactids;
+}
+
+.firstnames {
+	grid-area: firstnames;
+}
+
+.lastnames {
+	grid-area: lastnames;
+}
+
+.departments {
+	grid-area: departments;
+}
+
+.contactnames {
+	grid-area: contactnames;
+}
+
+.emails {
+	grid-area: emails;
+}
+
+.phonenos {
+	grid-area: phonenos;
+}
+
+.note {
+	grid-area: note;
+}
+
+.form-group label {
+	padding: 8px 0;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+	padding: 10px 5px;
+	border: 2px solid #e0e0e0;
+	border-radius: 4px;
+	outline: none;
+}
+
+.form-group input,
+.form-group select {
+	height: 40px;
+}
+
+.form-group textarea {
+	min-height: 60px;
+}
+
+/* Address Information Main Content Styles */
+
+.address-information-form form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"billingaddressline1 billingaddressline2 billingcity"
+		"billingstate billingcountry billingzipcode"
+		"shippingaddressline1 shippingaddressline2 shippingcity"		
+		"shippingstate shippingcountry shippingzipcode";
+	gap: 18px;
+}
+
+.billingaddressline1 {
+	grid-area: billingaddressline1;
+}
+
+.billingaddressline2 {
+	grid-area: billingaddressline2;
+}
+
+.billingcity {
+	grid-area: billingcity;
+}
+
+.billingstate {
+	grid-area: billingstate;
+}
+
+.billingcountry {
+	grid-area: billingcountry;
+}
+
+.billingzipcode {
+	grid-area: billingzipcode;
+}
+
+.shippingaddressline1 {
+	grid-area: shippingaddressline1;
+}
+
+.shippingaddressline2 {
+	grid-area: shippingaddressline2;
+}
+
+.shippingcity {
+	grid-area: shippingcity;
+}
+
+.shippingstate {
+	grid-area: shippingstate;
+}
+
+.shippingcountry {
+	grid-area: shippingcountry;
+}
+
+.shippingzipcode {
+	grid-area: shippingzipcode;
+}

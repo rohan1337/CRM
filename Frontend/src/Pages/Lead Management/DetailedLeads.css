@@ -1,0 +1,392 @@
+/* Leads Page Header */
+
+.header-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.contact-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.header-container-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-container-buttons button {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #d32f2f;
+    transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #b71c1c;
+}
+
+.save-button {
+    background-color: #4caf50;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #388e3c;
+}
+
+.save-and-new-button {
+    background-color: #2196f3;
+    transition: background-color 0.3s;
+}
+
+.save-and-new-button:hover {
+    background-color: #1976d2;
+}
+
+/* Lead Information Basic Structure */
+/* Address Information Basic Structure */
+/* Sales Order Information Basic Structure */
+/* Lead Qualification Basic Structure */
+
+.lead-information-container,
+.contact-information-container,
+.lead-qualification-container,
+.lead-interaction-container,
+.attachment-section-container,
+.product-section-container,
+.activity-section-container {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2) !important;
+}
+
+.lead-information-container {
+    border-top: 3px solid green;
+}
+
+.contact-information-container {
+    border-top: 3px solid blue;
+}
+
+.lead-qualification-container {
+    border-top: 3px solid gold
+}
+
+.lead-interaction-container {
+    border-top: 3px solid purple;
+}
+
+.attachment-section-container {
+    border-top: 3px solid orange;
+}
+
+.product-section-container {
+    border-top: 3px solid deeppink;
+}
+
+.activity-section-container {
+    border-top: 3px solid teal;
+}
+
+.lead-informations-heading h1,
+.contact-information-heading h1,
+.lead-qulification-heading h1,
+.lead-interaction-heading h1 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Lead Information Main Content Styles */
+
+.lead-information-form1 form {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "leadids1 firstnames1 lastnames1"
+        "titles1 leadowners1 companies1"
+        "dateofbirth1 nationality1 ."
+        "notes1 notes1 notes1";
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactids1 {
+    grid-area: contactids1;
+}
+
+.firstnames1 {
+    grid-area: firstnames1;
+}
+
+.lastnames1 {
+    grid-area: lastnames1;
+}
+
+.titles1 {
+    grid-area: titles1;
+}
+
+.leadowners1 {
+    grid-area: leadowners1;
+}
+
+.companies1 {
+    grid-area: companies1;
+}
+
+.dateofbirth1 {
+    grid-area: dateofbirth1;
+}
+
+.nationality1 {
+    grid-area: nationality1;
+}
+
+.notes1 {
+    grid-area: notes1;
+}
+
+.form-group label {
+    padding: 8px 0;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px 5px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-group input,
+.form-group select {
+    height: 40px;
+}
+
+.form-group textarea {
+    min-height: 60px;
+}
+
+/* Contact Information Main Content Styles */
+
+.contact-information-form form {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "emailids2 secondaryemails2 phonenos2"
+        "mobilenos2 websites2 addresslines12"
+        "addresslines22 cities2 states2"
+        "countries2 zipcodes2 ." !important;
+    gap: 18px;
+}
+
+.emailids2 {
+    grid-area: emailids2;
+}
+
+.secondaryemails2 {
+    grid-area: secondaryemails2;
+}
+
+.phonenos2 {
+    grid-area: phonenos2;
+}
+
+.mobilenos2 {
+    grid-area: mobilenos2;
+}
+
+.websites2 {
+    grid-area: websites2;
+}
+
+.addresslines12 {
+    grid-area: addresslines12;
+}
+
+.addresslines22 {
+    grid-area: addresslines22;
+}
+
+.cities2 {
+    grid-area: cities2;
+}
+
+.states2 {
+    grid-area: states2;
+}
+
+.countries2 {
+    grid-area: countries2;
+}
+
+.zipcodes2 {
+    grid-area: zipcodes2;
+}
+
+/* Lead Qualification Main Content Styles */
+
+.lead-qualification-form form {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "leadsources1 leadstatuses1 interestlevels1"
+        "budgets1 potentialrevenues1 .";
+    gap: 18px;
+}
+
+.leadsources1 {
+    grid-area: leadsources1;
+}
+
+.leadstatuses1 {
+    grid-area: leadstatuses1;
+}
+
+.interestlevels1 {
+    grid-area: interestlevels1;
+}
+
+.budgets1 {
+    grid-area: budgets1;
+}
+
+.potentialrevenues1 {
+	grid-area: potentialrevenues1;
+}
+
+/* Lead Interaction Main Content Styles */
+
+.lead-interaction-form form {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "interactiontypes1 interactiondates1 interactionoutcomes1"
+        "notes4 notes4 notes4";
+    gap: 18px;
+}
+
+.interactiontypes1 {
+    grid-area: interactiontypes1;
+}
+
+.interactiondates1 {
+    grid-area: interactiondates1;
+}
+
+.interactionoutcomes1 {
+    grid-area: interactionoutcomes1;
+}
+
+.notes4 {
+    grid-area: notes4;
+}
+
+/* Attachments Products Activities Styles */
+
+.attachment-section-heading,
+.product-section-heading,
+.activity-section-heading {
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.attachment-section-heading h1,
+.product-section-heading h1,
+.activity-section-heading h1 {
+	font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.attachment-section-heading button,
+.product-section-heading button,
+.activity-section-heading button {
+	border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+	background-color: #2196f3;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+	transition: background-color 0.3s;
+}
+
+.attachment-section-heading button:hover,
+.product-section-heading button:hover,
+.activity-section-heading button:hover {
+	background-color: #1976d2;
+}
+
+.attachment-section-table,
+.product-section-table,
+.activity-section-table {
+    padding: 20px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.table-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+.table-column h1 {
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .table-header {
+        flex-direction: column;
+    }
+}

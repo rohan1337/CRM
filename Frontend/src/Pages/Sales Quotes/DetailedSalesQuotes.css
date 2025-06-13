@@ -1,0 +1,537 @@
+.header-container {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.sales-quotes-name-heading {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
+}
+
+.header-container-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.header-container-buttons button {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+}
+
+.edit-button {
+	background-color: #d32f2f;
+	transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+	background-color: #b71c1c;
+}
+
+.save-button {
+	background-color: #4caf50;
+	transition: background-color 0.3s;
+}
+
+.save-button:hover {
+	background-color: #388e3c;
+}
+
+.send-email-button {
+	background-color: #ffb92e;
+	transition: background-color 0.3s;
+}
+
+.send-email-button:hover {
+	background-color: #eea20a;
+}
+
+.convert-button {
+	background-color: #4D55CC;
+	transition: background-color 0.3s;
+}
+
+.convert-button:hover {
+	background-color: #211C84;
+}
+
+.more-options-container {
+	position: relative;
+}
+
+.more-options-button {
+	background-color: #2196f3;
+	transition: background-color 0.3s;
+	display: relative;
+}
+
+.more-options-button:hover {
+	background-color: #1976d2;
+}
+
+/* Product Information Basic Structure */
+
+.overview-container,
+.sales-quote-information-container,
+.address-information1-container,
+.product-information1-container,
+.sales-order1-container,
+.notes1-container,
+.attachment1-section-container,
+.activity-section1-container,
+.email-interactions-container {
+	background-color: #fff;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.overview-container {
+	border-top: 3px solid green;
+}
+
+.sales-quote-information-container {
+	border-top: 3px solid blue;
+}
+
+.address-information1-container {
+	border-top: 3px solid gold;
+}
+
+.product-information1-container {
+	border-top: 3px solid purple;
+}
+
+.sales-order1-container {
+	border-top: 3px solid orange;
+}
+
+.attachment1-section-container {
+	border-top: 3px solid deeppink;
+}
+
+.notes1-container {
+	border-top: 3px solid teal;
+}
+
+.activity-section1-container {
+	border-top: 3px solid #9694FF;
+}
+
+.email-interactions-container {
+	border-top: 3px solid #E3A5C7;
+}
+
+.overview-heading h1,
+.sales-quote-information-heading h1,
+.address-information1-heading h1,
+.notes1-heading h1,
+.email-interactions-heading {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
+	padding: 20px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+/* Overview Main Content Styles */
+
+.overview-form form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"createdon status duedate"
+		"subject owner .";
+	gap: 18px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.createdon {
+	grid-area: createdon;
+}
+
+.status {
+	grid-area: status;
+}
+
+.duedate {
+	grid-area: duedate;
+}
+
+.subject {
+	grid-area: subject;
+}
+
+.owner {
+	grid-area: owner;
+}
+
+.form-group label {
+	padding: 8px 0;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+	padding: 10px 5px;
+	border: 2px solid #e0e0e0;
+	border-radius: 4px;
+	outline: none;
+}
+
+.form-group input,
+.form-group select {
+	height: 40px;
+}
+
+.form-group textarea {
+	min-height: 60px;
+}
+
+/* Sales Quote Main Content Styles */
+
+.sales-quote-information-form form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"salesquoteowner oppname accountname"
+		"subject primarycontact amount"
+		"successrate duedate status";
+	gap: 18px;
+}
+
+.salesquoteowner {
+	grid-area: salesquoteowner;
+}
+
+.oppname {
+	grid-area: oppname;
+}
+
+.accountname {
+	grid-area: accountname;
+}
+
+.subject {
+	grid-area: subject;
+}
+
+.primarycontact {
+	grid-area: primarycontact;
+}
+
+.amount {
+	grid-area: amount;
+}
+
+.successrate {
+	grid-area: successrate;
+}
+
+.duedate {
+	grid-area: duedate;
+}
+
+.status {
+	grid-area: status;
+}
+
+/* Address Information Main Content Styles */
+
+.address-information1-form form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"billingcountry billingstate billingcity"
+		"billingstreet billingcode ."
+		"shippingcountry shippingstate shippingcity"
+		"shippingstreet shippingcode .";
+	gap: 18px;
+}
+
+.billingcountry {
+	grid-area: billingcountry;
+}
+
+.billingstate {
+	grid-area: billingstate;
+}
+
+.billingcity {
+	grid-area: billingcity;
+}
+
+.billingstreet {
+	grid-area: billingstreet;
+}
+
+.billingcode {
+	grid-area: billingcode;
+}
+
+.shippingcountry {
+	grid-area: shippingcountry;
+}
+
+.shippingstate {
+	grid-area: shippingstate;
+}
+
+.shippingcity {
+	grid-area: shippingcity;
+}
+
+.shippingstreet {
+	grid-area: shippingstreet;
+}
+
+.shippingcode {
+	grid-area: shippingcode;
+}
+
+/* Notes Main Content Styles */
+
+.notes1-form form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"notes notes notes";
+	gap: 18px;
+}
+
+.notes {
+	grid-area: notes;
+}
+
+/* Menu Modal */
+.menu-modal-container {
+	position: absolute;
+	top: calc(100% + 0.875rem);
+	right: 0;
+	background: white;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 10px;
+	min-width: 250px;
+	z-index: 1000;
+}
+
+.menu-modal-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-modal-list li {
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.menu-modal-list li:hover {
+	background: #f0f0f0;
+}
+
+.menu-button {
+	padding: 8px 16px;
+	background: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Menu Modal */
+.menu-modal-container {
+	position: absolute;
+	top: calc(100% + 0.875rem);
+	right: 0;
+	background: white;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 10px;
+	min-width: 250px;
+	z-index: 1000;
+}
+
+.menu-modal-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-modal-list li {
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.menu-modal-list li:hover {
+	background: #f0f0f0;
+}
+
+.menu-button {
+	padding: 8px 16px;
+	background: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Attachments Products Activities Styles */
+
+.attachment1-section-heading,
+.product-information1-heading,
+.sales-order1-heading,
+.activity-section1-heading {
+	padding: 20px;
+	border-bottom: 2px solid #e0e0e0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.attachment1-section-heading h1,
+.product-information1-heading h1,
+.sales-order1-heading h1,
+.activity-section1-heading h1 {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
+}
+
+.attachment1-section-heading button,
+.product-information1-heading button,
+.sales-order1-heading button,
+.activity-section1-heading button {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+	background-color: #2196f3;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	transition: background-color 0.3s;
+}
+
+.attachment1-section-heading button:hover,
+.product-information1-heading button:hover,
+.sales-order1-heading button:hover,
+.activity-section1-heading button:hover {
+	background-color: #1976d2;
+}
+
+.attachment1-section-table,
+.product-information1-table,
+.activity-section1-table {
+	padding: 20px;
+}
+
+.table-container {
+	display: flex;
+	justify-content: space-around;
+	gap: 10px;
+	padding: 20px;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+}
+
+.table-column {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 200px;
+}
+
+.table-column h1 {
+	font-size: 0.875rem;
+	color: #64748b;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.menu-button:hover {
+	background: #0056b3;
+}
+
+/* Email Interactions Styles */
+
+.email-interactions-heading,
+.email-interactions-heading .left {
+	display: flex;
+	justify-content: space-between;
+}
+
+.email-interactions-heading .left {
+	gap: 20px
+}
+
+.email-interactions-heading button {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	transition: background-color 0.3s;
+}
+
+.email2-button {
+	background-color: #EB5B00;
+}
+
+.email2-button:hover {
+	background-color: #c74e02;
+}
+
+.draft-button {
+	background-color: #441752;
+}
+
+.draft-button:hover {
+	background-color: #30103a;
+}
+
+.compose-mail-button {
+	background-color: #2196f3;
+}
+
+.compose-mail-button:hover {
+	background-color: #1976d2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.table-header {
+		flex-direction: column;
+	}
+}
