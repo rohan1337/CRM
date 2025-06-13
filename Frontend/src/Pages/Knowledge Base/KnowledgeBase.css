@@ -1,0 +1,142 @@
+/* Top Header */
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-top: 3px solid #ef4444; /* Red top border (like the 1st screenshot) */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.page-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Main Body Layout */
+.main-body {
+    display: flex;
+    gap: 20px;
+}
+
+/* Left Menu Panel */
+.left-menu-panel {
+	width: 300px;
+    display: flex;
+	flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+	border-top: 3px solid blue;
+}
+
+.left-menu-panel-header {
+	border-bottom: 2px solid #e0e0e0;
+	padding: 20px;
+}
+
+.left-menu-panel h1 {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
+	margin: 0;
+}
+
+/* Tickets Menu */
+.tickets-menu {
+    list-style: none;
+    display: flex;
+	flex-direction: column;
+}
+
+.tickets-menu li {
+	padding: 15px 20px;
+    cursor: pointer;
+    color: #444;
+	background-color: #fff;
+}
+
+.tickets-menu li:hover {
+    color: #000;
+	background-color: #f2f2f2;
+}
+
+/* Center Content */
+.center-content {
+	flex: 1;
+    background-color: #fff;
+	border-top: 3px solid gold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.center-content-header {
+	padding: 20px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+.center-content-header h1 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.center-content-body {
+	padding: 20px;
+	overflow-y: auto;
+}
+
+.ticket-row {
+    background-color: #f2f2f2;
+    height: 40px;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column;
+    }
+
+    .left-menu-panel,
+    .center-content,
+    .right-panel {
+        margin-bottom: 1rem;
+    }
+
+    .left-menu-panel {
+        flex: unset;
+        width: 100%;
+    }
+
+    .right-panel {
+        width: 100%;
+    }
+}

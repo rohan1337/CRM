@@ -1,0 +1,329 @@
+.header-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.sales-quotes-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.header-container-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-container-buttons button {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #d32f2f;
+    transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #b71c1c;
+}
+
+.save-button {
+    background-color: #4caf50;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #388e3c;
+}
+
+.save-and-new-button {
+    background-color: #2196f3;
+    transition: background-color 0.3s;
+}
+
+.save-and-new-button:hover {
+    background-color: #1976d2;
+}
+
+/* Sales Order Basic Structure */
+/* Address Information Basic Structure */
+/* Product Information Basic Structure */
+/* Terms and Conditions Basic Structure */
+/* Description Basic Structure */
+
+.sales-order-container,
+.address-information-container,
+.product-information-container,
+.terms-and-conditions-container,
+.description-container {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2) !important;
+}
+
+.sales-order-container {
+    border-top: 3px solid green;
+}
+
+.address-information-container {
+    border-top: 3px solid blue;
+}
+
+.product-information-container {
+    border-top: 3px solid gold;
+}
+
+.terms-and-conditions-container {
+    border-top: 3px solid purple;
+}
+
+.description-container {
+    border-top: 3px solid orange;
+}
+
+.sales-order-heading h1,
+.address-information-heading h1,
+.product-information-heading h1,
+.terms-and-conditions-heading h1,
+.description-container h1 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Sales Order Main Content Styles */
+
+.sales-order-form form {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "quoteowner oppname accountname"
+        "subject primarycontact amount"
+        "successrate duedate status";
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.quoteowner {
+    grid-area: quoteowner;
+}
+
+.oppname {
+    grid-area: oppname;
+}
+
+.accountname {
+    grid-area: accountname;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.primarycontact {
+    grid-area: primarycontact;
+}
+
+.amount {
+    grid-area: amount;
+}
+
+.successrate {
+    grid-area: successrate;
+}
+
+.duedate {
+    grid-area: duedate;
+}
+
+.status {
+    grid-area: status;
+}
+
+.form-group label {
+    padding: 8px 0;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px 5px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-group input,
+.form-group select {
+    height: 40px;
+}
+
+.form-group textarea {
+    min-height: 60px;
+}
+
+/* Address Information Main Content Styles */
+
+.address-information-form form {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "billingcountry billingstate billingcity"
+        "billingstreet billingpostalcode ."
+        "shippingcountry shippingstate shippingcity"
+        "shippingstreet shippingpostalcode .";
+    gap: 18px;
+}
+
+.billingcountry {
+    grid-area: billingcountry;
+}
+
+.billingstate {
+    grid-area: billingstate;
+}
+
+.billingcity {
+    grid-area: billingcity;
+}
+
+.billingstreet {
+    grid-area: billingstreet;
+}
+
+.billingpostalcode {
+    grid-area: billingpostalcode;
+}
+
+.shippingcountry {
+    grid-area: shippingcountry;
+}
+
+.shippingstate {
+    grid-area: shippingstate;
+}
+
+.shippingcity {
+    grid-area: shippingcity;
+}
+
+.shippingstreet {
+    grid-area: shippingstreet;
+}
+
+.shippingpostalcode {
+    grid-area: shippingpostalcode;
+}
+
+/* Product Information Main Content Styles */
+
+.sales-quotes-table-env-container {
+    padding: 20px;
+}
+
+.sales-quotes-table-container {
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    margin: 0px;
+}
+
+.sales-quotes-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.sales-quotes-table thead {
+    background-color: #f8fafc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.sales-quotes-table th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.sales-quotes-table th:hover {
+    background-color: #f1f5f9;
+}
+
+.sales-quotes-table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.sales-quotes-table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+.sales-quotes-table td {
+    padding: 12px 16px;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+/* Terms and Conditions Styles */
+
+.terms-content {
+    padding: 20px;
+}
+
+.terms-content section {
+    margin-bottom: 20px;
+}
+
+.terms-content h2 {
+    color: #444;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.terms-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Description Styles */
+
+.description-form form {
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .table-header {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,176 @@
+.header-container {
+	background-color: #fff;
+	border-top: 3px solid red;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.header-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Search Box */
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 0.5rem;
+}
+
+/* Body Split Layout */
+.main-content-body {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+}
+
+/* Left Panel (Ticket View) */
+.left-panel {
+    flex: 1;
+    background-color: #fff;
+	border-top: 3px solid blue;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.ticket-view-header {
+	padding: 20px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+.ticket-view-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ticket-view-heading {
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.tickets-section {
+	padding: 20px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.ticket-field {
+    background-color: #f2f2f2;
+    height: 30px;
+    border-radius: 4px;
+}
+
+/* Right Panel (Knowledge Base) */
+.right-panel {
+    flex: 1;
+    background-color: #fff;
+	border-top: 3px solid gold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+/* Knowledge Base Article */
+
+.knowledge-base-article-header {
+	border-bottom: 2px solid #e0e0e0;
+	padding: 20px;
+}
+
+.knowledge-base-article-header h1 {
+    font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.knowledge-base-article-body {
+	padding: 20px;
+}
+
+.article-intro {
+    margin-bottom: 0.75rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.knowledge-base-article-body ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.article-actions {
+	padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Reusable Button Styles */
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.btn-default {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-default.active-view {
+    background-color: #bdbdbd;
+}
+
+.btn-primary {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1976d2;
+}
+
+.btn-success {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-content-body {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        margin-bottom: 1rem;
+    }
+}
