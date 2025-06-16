@@ -51,6 +51,7 @@ import TelephoneConnect from "./Pages/Telephone Channels/TelephoneConnect";
 import AirtelConnect from "./Pages/Telephone Channels/AirtelConnect";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Login/Signup";
+import ResetPassword from "./Pages/Login/ResetPassword";
 
 function App() {
 	return (
@@ -58,6 +59,7 @@ function App() {
 			<Routes>
 				<Route path="/signup" element={<Signup />} />
 				<Route path="/login" element={<Login />} />
+				<Route path="/reset" element={<ResetPassword />} />
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Homepage />} />
 					<Route path="/dashboard" element={<Homepage />} />
