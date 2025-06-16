@@ -149,7 +149,7 @@ const OrganizationalStructure = () => {
 									)
 								}
 							>
-								Add Organization
+								Create Organization
 							</span>
 						</button>
 						<button className="icon-button-modern refresh-button">

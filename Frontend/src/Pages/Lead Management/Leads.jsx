@@ -166,7 +166,7 @@ const Leads = () => {
 						<button className="modern-button add-button">
 							{/* <span className="button-icon">+</span> */}
 							<Plus size={20} color="#fff" strokeWidth={2} />
-							<span>Add Lead</span>
+							<span>Create Lead</span>
 						</button>
 						<button className="icon-button-modern refresh-button">
 							<RefreshCcw size={20} color="#64748b" strokeWidth={2} />

@@ -158,7 +158,7 @@ const Emails = () => {
 									)
 								}
 							>
-								Add Email
+								Create Email
 							</span>
 						</button>
 						<button className="icon-button-modern refresh-button">

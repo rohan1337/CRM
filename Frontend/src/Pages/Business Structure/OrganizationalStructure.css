@@ -169,9 +169,9 @@ body {
 	align-items: center;
 	gap: 8px;
 	padding: 10px 16px;
-	background-color: var(--primary-color);
-	color: white;
-	border: none;
+	background-color: white;
+	color:#64748b;
+	border: 1px solid var(--border-color);
 	border-radius: var(--radius-md);
 	font-weight: 500;
 	cursor: pointer;
@@ -186,18 +186,18 @@ body {
 }
 
 .action-select::after {
-	content: "";
+	content: "hello";
 	position: absolute;
 	right: 12px;
 	top: 50%;
 	transform: translateY(-50%);
 	border: 6px solid transparent;
-	border-top-color: white;
+	border-top-color: rgba(250, 245, 245, 0.595);
 	pointer-events: none;
 }
 
 .action-select:hover {
-	background-color: var(--primary-dark);
+	background-color: #f6f6ff;
 	box-shadow: var(--shadow-md);
 }
 
@@ -304,6 +304,7 @@ body {
 	cursor: pointer;
 	transition: var(--transition);
 	box-shadow: var(--shadow-sm);
+	appearance: none; /* Remove default button styles */
 }
 
 .modern-button:hover {

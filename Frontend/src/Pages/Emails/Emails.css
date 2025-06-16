@@ -162,10 +162,10 @@ body {
 	align-items: center;
 	gap: 8px;
 	padding: 8px 16px;
-	background-color: var(--surface-color);
-	border: 1px solid var(--border-color);
+	background-color: white;
+	border: 1px solid grey;
 	border-radius: var(--radius-md);
-	color: var(--text-secondary);
+	color: grey;
 	font-weight: 500;
 	cursor: pointer;
 	transition: var(--transition);
@@ -271,9 +271,9 @@ body {
 	align-items: center;
 	gap: 8px;
 	padding: 10px 16px;
-	background-color: var(--primary-color);
-	color: white;
-	border: none;
+	background-color: white;
+	color: #64748b;;
+	border: 1px solid var(--border-color);
 	border-radius: var(--radius-md);
 	font-weight: 500;
 	cursor: pointer;
@@ -443,7 +443,7 @@ label {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	background-color: #fff;
+	background-color: #f5efef;
 	color: #64748b;
 	padding: 10px 16px;
 	border: 1px solid var(--border-color);
@@ -488,15 +488,15 @@ label {
 
 .actions-button {
 	padding: 8px 16px;
-	background: #007bff;
-	color: white;
-	border: none;
+	background: white;
+	color: #64748b;
+	border: 1px solid var(--border-color);
 	border-radius: 5px;
 	cursor: pointer;
 }
 
 .actions-button:hover {
-	background: #0056b3;
+	background: #dfecfa;
 }
 
 .reset-button {
@@ -804,7 +804,7 @@ label {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 10px;
+	gap: 100px;
 }
 
 .display-btn {
