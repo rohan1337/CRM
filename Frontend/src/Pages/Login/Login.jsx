@@ -63,8 +63,8 @@ const Login = () => {
 								<input
 									type="text"
 									id="username"
-									className="form-input montserrat"
-									placeholder="Your User name"
+									className="form-input"
+									placeholder="Your User Name"
 									value={formData.username}
 									onChange={handleChange}
 								/>
@@ -84,7 +84,7 @@ const Login = () => {
 									type={passwordVisible ? "text" : "password"}
 									id="password"
 									className="form-input"
-									placeholder="Your password"
+									placeholder="Your Password"
 									value={formData.password}
 									onChange={handleChange}
 								/>
