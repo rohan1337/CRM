@@ -49,7 +49,7 @@ const Signup = () => {
 					</div>
 
 					{/* Login Form */}
-					<h2 className="form-title">Register</h2>
+					<h2 className="form-title montserrat">Register</h2>
 					<form onSubmit={handleSubmit}>
 						{/* Username Input */}
 						<div className="form-group1">
@@ -63,7 +63,7 @@ const Signup = () => {
 								<input
 									type="text"
 									id="username"
-									className="form-input"
+									className="form-input montserrat"
 									placeholder="Your full name"
 									value={formData.username}
 									onChange={handleChange}
@@ -83,7 +83,7 @@ const Signup = () => {
 								<input
 									type="text"
 									id="username"
-									className="form-input"
+									className="form-input montserrat"
 									placeholder="Your email"
 									value={formData.email}
 									onChange={handleChange}
@@ -103,7 +103,7 @@ const Signup = () => {
 								<input
 									type={passwordVisible ? "text" : "password"}
 									id="password"
-									className="form-input"
+									className="form-input montserrat"
 									placeholder="Your password"
 									value={formData.password}
 									onChange={handleChange}
@@ -131,10 +131,10 @@ const Signup = () => {
 						</div>
 
 						{/* Remember Me & Forgot Password */}
-						<div className="form-row">
+						<div className="form-row montserrat">
 							Already have an account?{" "}
 							<a
-								className="forgot-link"
+								className="forgot-link montserrat"
 								onClick={() => navigate("/login")}
 							>
 								<i>Login here</i>
@@ -142,19 +142,19 @@ const Signup = () => {
 						</div>
 
 						{/* Login Button */}
-						<button type="submit" className="login-btn">
+						<button type="submit" className="login-btn montserrat">
 							Log In
 						</button>
 
 						{/* Divider */}
 						<div className="divider1">
-							<span className="divider-text">or</span>
+							<span className="divider-text montserrat">or</span>
 						</div>
 
 						{/* Google Login */}
 						<button
 							type="button"
-							className="google-btn"
+							className="google-btn montserrat"
 							onClick={handleGoogleLogin}
 						>
 							<svg className="google-icon" viewBox="0 0 24 24">
@@ -183,10 +183,10 @@ const Signup = () => {
 				{/* Right Panel (Illustration & Info) */}
 				<div className="right-panel1">
 					<div className="right-panel-content">
-						<h2 className="content-header">
+						<h2 className="content-header montserrat">
 							<i>Register</i>
 						</h2>
-						<p className="content-text">
+						<p className="content-text montserrat">
 							<i>
 								Lorem ipsum dolor, sit amet consectetur
 								adipisicing elit. Repellat omnis dicta ad vel

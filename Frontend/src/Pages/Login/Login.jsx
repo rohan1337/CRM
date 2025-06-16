@@ -49,11 +49,11 @@ const Login = () => {
 					</div>
 
 					{/* Login Form */}
-					<h2 className="form-title">Login</h2>
+					<h2 className="form-title montserrat">Login</h2>
 					<form onSubmit={handleSubmit}>
 						{/* Username Input */}
 						<div className="form-group1">
-							<div className="input-container">
+							<div className="input-container montserrat">
 								<svg
 									className="input-icon icon"
 									viewBox="0 0 24 24"
@@ -63,7 +63,7 @@ const Login = () => {
 								<input
 									type="text"
 									id="username"
-									className="form-input"
+									className="form-input montserrat"
 									placeholder="Your User name"
 									value={formData.username}
 									onChange={handleChange}
@@ -120,12 +120,12 @@ const Login = () => {
 									checked={formData.rememberMe}
 									onChange={handleChange}
 								/>
-								<span className="checkbox-label">
+								<span className="checkbox-label montserrat">
 									Remember me
 								</span>
 							</label>
 							<a
-								className="forgot-link"
+								className="forgot-link montserrat"
 								onClick={() => navigate("/reset")}
 							>
 								<i>Forgot Password?</i>
@@ -133,7 +133,7 @@ const Login = () => {
 						</div>
 
 						{/* Login Button */}
-						<button type="submit" className="login-btn">
+						<button type="submit" className="login-btn montserrat">
 							Log In
 						</button>
 
@@ -145,10 +145,10 @@ const Login = () => {
 						{/* Google Login */}
 						<button
 							type="button"
-							className="google-btn"
+							className="google-btn montserrat"
 							onClick={handleGoogleLogin}
 						>
-							<svg className="google-icon" viewBox="0 0 24 24">
+							<svg className="google-icon " viewBox="0 0 24 24">
 								<path
 									fill="#4285F4"
 									d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -170,10 +170,10 @@ const Login = () => {
 						</button>
 
 						{/* Sign Up */}
-						<p className="signup-text">
+						<p className="signup-text montserrat">
 							Haven't registered yet?{" "}
 							<a
-								className="signup-link"
+								className="signup-link montserrat"
 								onClick={() => navigate("/signup")}
 							>
 								Sign Up
@@ -185,10 +185,10 @@ const Login = () => {
 				{/* Right Panel (Illustration & Info) */}
 				<div className="right-panel1">
 					<div className="right-panel-content">
-						<h2 className="content-header">
+						<h2 className="content-header montserrat">
 							<i>Login</i>
 						</h2>
-						<p className="content-text">
+						<p className="content-text montserrat">
 							<i>
 								Lorem ipsum dolor, sit amet consectetur
 								adipisicing elit. Repellat omnis dicta ad vel

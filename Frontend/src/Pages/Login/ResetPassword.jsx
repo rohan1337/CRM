@@ -41,7 +41,7 @@ const ResetPassword = () => {
 					</div>
 
 					{/* Login Form */}
-					<h2 className="form-title"><i>Reset Your Password</i></h2>
+					<h2 className="form-title montserrat"><i>Reset Your Password</i></h2>
 					<form onSubmit={handleSubmit}>
 						{/* New Password */}
 						<div className="form-group1">
@@ -55,7 +55,7 @@ const ResetPassword = () => {
 								<input
 									type={passwordVisible ? "text" : "password"}
 									id="password"
-									className="form-input"
+									className="form-input montserrat"
 									placeholder="New Password"
 									value={formData.password}
 									onChange={handleChange}
@@ -75,7 +75,7 @@ const ResetPassword = () => {
 								<input
 									type={passwordVisible ? "text" : "password"}
 									id="password"
-									className="form-input"
+									className="form-input montserrat"
 									placeholder="Confirm Your Password"
 									value={formData.password}
 									onChange={handleChange}
@@ -85,13 +85,13 @@ const ResetPassword = () => {
 
 						{/* Remember Me & Forgot Password */}
 						<div className="form-row3">
-							<a className="forgot-link" onClick={() => navigate("/login")}>
+							<a className="forgot-link montserrat" onClick={() => navigate("/login")}>
 								<i>Go Back to Login</i>
 							</a>
 						</div>
 
 						{/* Set New Password Button */}
-						<button type="submit" className="login-btn">
+						<button type="submit" className="login-btn montserrat">
 							Set New Password
 						</button>
 					</form>
@@ -100,10 +100,10 @@ const ResetPassword = () => {
 				{/* Right Panel (Illustration & Info) */}
 				<div className="right-panel1">
 					<div className="right-panel-content">
-						<h2 className="content-header">
+						<h2 className="content-header montserrat">
 							<i>Just one more step!</i>
 						</h2>
-						<p className="content-text">
+						<p className="content-text montserrat">
 							<i>
 								Lorem ipsum dolor, sit amet consectetur
 								adipisicing elit. Repellat omnis dicta ad vel
