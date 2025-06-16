@@ -23,7 +23,7 @@ body {
 	max-width: 1000px;
 	width: 100%;
 	display: flex;
-	max-height: 700px;
+	min-height: 700px;
 }
 
 .left-panel1 {
@@ -41,7 +41,7 @@ body {
 .logo-image {
 	width: 245px;
 	height: 48px;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -51,7 +51,7 @@ body {
 	font-size: 24px;
 	font-weight: bold;
 	color: #1f2937;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	text-align: center;
 }
 
@@ -133,11 +133,17 @@ body {
 	background-color: rgba(156, 163, 175, 0.1);
 }
 
-.form-row1 {
+.form-row {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
+	gap: 5px;
 	margin-bottom: 1rem;
+	font-size: 14px;
+}
+
+.form-row i {
+	font-size: 14px;
 }
 
 .checkbox-container {
@@ -148,7 +154,7 @@ body {
 }
 
 .checkbox {
-	width: 14px;
+	width: 16px;
 	height: 16px;
 	margin-right: 8px;
 	accent-color: #14b8a6;
@@ -156,20 +162,17 @@ body {
 }
 
 .checkbox-label {
-	font-size: 14px !important;
+	font-size: 14px;
 	color: #6b7280;
 	cursor: pointer;
 	user-select: none;
 }
 
 .forgot-link {
+	font-size: 14px;
 	color: #14b8a6;
 	text-decoration: none;
 	transition: color 0.2s;
-}
-
-.forgot-link i {
-	font-size: 14px;
 }
 
 .forgot-link:hover {
@@ -197,13 +200,13 @@ body {
 	transform: scale(1.02);
 }
 
-.divider {
+.divider1 {
 	position: relative;
 	margin-bottom: 1rem;
 	text-align: center;
 }
 
-.divider::before {
+.divider1::before {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -266,7 +269,6 @@ body {
 .signup-link:hover {
 	color: #0f766e;
 	text-decoration: underline;
-	cursor: pointer;
 }
 
 /* Right Panel Styles */
