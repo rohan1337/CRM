@@ -90,11 +90,11 @@ function App() {
 					<Route path="/activitymanagement/emails" element={<Emails />} />
 					<Route path="/activitymanagement/emails/create" element={<CreateEmail />} />
 					<Route path="/business-structure/org-hub" element={<OrganizationalStructure />} />
-          			<Route path="/business-structure/org-hub/createNewOrg" element={<NewOrganizationalCreation />} />
+          			<Route path="/business-structure/org-hub/create" element={<NewOrganizationalCreation />} />
           			<Route path="/business-structure/division" element={<Division />} />
           			<Route path="/service/tickets" element={<Tickets />} />
-          			<Route path="/service/tickets/createTicket" element={<CreateTicket />} />
-          			<Route path="/service/tickets/displayTicket" element={<DisplayTicket/>} />
+          			<Route path="/service/tickets/create" element={<CreateTicket />} />
+          			<Route path="/service/tickets/details" element={<DisplayTicket/>} />
 					<Route path="/service/agentdesktop" element={<AgentSupport />} />
 					<Route path="/service/knowledgebase" element={<KnowledgeBase />} />
 					<Route path="/admin/generalsettings" element={<GeneralSettings />} />
@@ -104,7 +104,7 @@ function App() {
 					<Route path="/admin/workflows/create" element={<CreateOrEditWorkflow />} />
 					<Route path="/admin/userprofiles" element={<UserProfile />} />
 					<Route path="/admin/userprofiles/create" element={<CreateUserProfile />} />
-					<Route path="/admin/userprofiles/display" element={<DetailedUserProfile />} />
+					<Route path="/admin/userprofiles/details" element={<DetailedUserProfile />} />
 					<Route path="/channels/emails" element={<EmailChannels />} />
 					<Route path="/channels/emails/create" element={<CreateEmailChannels />} />
 					<Route path="/channels/webforms" element={<Webforms />} />

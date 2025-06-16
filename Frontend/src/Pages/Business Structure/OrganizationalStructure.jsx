@@ -145,7 +145,7 @@ const OrganizationalStructure = () => {
 							<span
 								onClick={() =>
 									navigate(
-										"/business-structure/org-hub/createNewOrg"
+										"/business-structure/org-hub/create"
 									)
 								}
 							>
