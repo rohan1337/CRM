@@ -163,7 +163,7 @@ const Leads = () => {
 						<Search className="search-icon-small" size={20} color="#64748b" strokeWidth={1} />
 					</div>
 					<div className="action-icons">
-						<button className="modern-button add-button">
+						<button className="modern-button add-button" onClick={() => navigate("/sales/leads/create")}>
 							{/* <span className="button-icon">+</span> */}
 							<Plus size={20} color="#fff" strokeWidth={2} />
 							<span>Create Lead</span>

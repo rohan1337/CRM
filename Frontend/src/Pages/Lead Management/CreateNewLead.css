@@ -2,6 +2,7 @@
 
 .header-container {
 	background-color: #fff;
+	border-top: 3px solid red;
 	border-radius: 8px;
 	padding: 20px;
 	display: flex;
@@ -33,21 +34,21 @@
 	cursor: pointer;
 }
 
-.cancel-button {
-	background-color: #D32F2F;
+.cancel-button123 {
+	background-color: #d32f2f;
 	transition: background-color 0.3s;
 }
 
-.cancel-button:hover {
+.cancel-button123:hover {
 	background-color: #b71c1c;
 }
 
-.save-button {
+.save-button123 {
 	background-color: #4caf50;
 	transition: background-color 0.3s;
 }
 
-.save-button:hover {
+.save-button123:hover {
 	background-color: #388e3c;
 }
 
@@ -63,12 +64,10 @@
 /* Leads Information Basic Structure */
 /* Contact Information Basic Structure */
 /* Lead Qualification Basic Structure */
-/* Lead Interaction Details Basic Structure */
 
 .lead-information-container,
 .contact-information-container,
-.lead-qualification-container,
-.lead-interaction-details-container {
+.lead-qualification-container {
 	background-color: #fff;
 	border-radius: 8px;
 	margin-bottom: 20px;
@@ -76,8 +75,7 @@
 
 .lead-information-heading h1,
 .contact-information-heading h1,
-.lead-qualification-heading h1,
-.lead-interaction-details-heading h1 {
+.lead-qualification-heading h1 {
 	font-size: 1.125rem;
 	font-weight: 600;
 	color: #000;
@@ -93,8 +91,8 @@
 	grid-template-areas:
 		"leadid firstname lastname"
 		"title leadowner company"
-		"dateofbirth nationality ."
-		"note note note";
+		"dob nationality ."
+		"notes notes notes";
 	gap: 18px;
 }
 
@@ -127,16 +125,16 @@
 	grid-area: company;
 }
 
-.dateofbirth {
-	grid-area: dateofbirth;
+.dob {
+	grid-area: dob;
 }
 
 .nationality {
 	grid-area: nationality;
 }
 
-.note {
-	grid-area: note;
+.notes {
+	grid-area: notes;
 }
 
 .form-group label {
@@ -163,71 +161,73 @@
 
 /* Contact Information Main Content Styles */
 
-.contact-information-form form {
+.contact-information-form123 form {
 	padding: 20px !important;
 	display: grid !important;
 	grid-template-areas:
-		"useremail secondaryemail phoneno"
-		"mobileno website ."
-		"addressline1 addressline1 addressline1"
-		"addressline2 addressline2 addressline2"		
-		"city state country"
-		"zipcode . ." !important;
+		"emailid123 secondaryemail123 phoneno123"
+		"mobileno123 fax123 website123"
+		"addressline1123 addressline2123 city123"
+		"state123 country123 zipcode123" !important;
 	gap: 18px !important;
 }
 
-.useremail {
-	grid-area: useremail;
+.emailid123 {
+	grid-area: emailid123;
 }
 
-.secondaryemail {
-	grid-area: secondaryemail;
+.secondaryemail123 {
+	grid-area: secondaryemail123;
 }
 
-.phoneno {
-	grid-area: phoneno !important;
+.phoneno123 {
+	grid-area: phoneno123 !important;
 }
 
-.mobileno {
-	grid-area: mobileno;
+.mobileno123 {
+	grid-area: mobileno123;
 }
 
-.website {
-	grid-area: website;
+.fax123 {
+	grid-area: fax123;
 }
 
-.addressline1 {
-	grid-area: addressline1;
+.website123 {
+	grid-area: website123;
 }
 
-.addressline2 {
-	grid-area: addressline2;
+.addressline1123 {
+	grid-area: addressline1123;
 }
 
-.city {
-	grid-area: city;
+.addressline2123 {
+	grid-area: addressline2123;
 }
 
-.state {
-	grid-area: state;
+.city123 {
+	grid-area: city123;
 }
 
-.country {
-	grid-area: country;
+.state123 {
+	grid-area: state123;
 }
 
-.zipcode {
-	grid-area: zipcode;
+.country123 {
+	grid-area: country123;
+}
+
+.zipcode123 {
+	grid-area: zipcode123;
 }
 
 /* Lead Qualification Main Content Styles */
 
-.lead-qualification-form form {
+.lead-qualification-form123 form {
 	padding: 20px;
 	display: grid;
 	grid-template-areas:
-		"leadsource budget leadstatus"
-		"potentialrevenue interestlevel .";
+		"leadsource leadstatus interestlevel"
+		"budget potentialrevenue .";
 	gap: 18px;
 }
 
@@ -235,20 +235,20 @@
 	grid-area: leadsource;
 }
 
-.budget {
-	grid-area: budget;
-}
-
 .leadstatus {
 	grid-area: leadstatus;
 }
 
-.potentialrevenue {
-	grid-area: potentialrevenue;
-}
-
 .interestlevel {
 	grid-area: interestlevel;
+}
+
+.budget {
+	grid-area: budget;
+}
+
+.potentialrevenue {
+	grid-area: potentialrevenue;
 }
 
 /* Lead Interaction Details Main Content Styles */
@@ -276,4 +276,84 @@
 
 .interactionnote {
 	grid-area: interactionnote;
+}
+
+.image-container {
+	background-color: #fff;
+	border-top: 3px solid blue;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+/* Container to center the upload card */
+.lead-image-upload-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 24px; /* space before the form */
+}
+
+/* The circular placeholder / preview */
+.lead-image-placeholder {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #f5f5f5;
+	border: 2px dashed #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+/* When an image is chosen, show it filling the circle */
+.lead-image-preview {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-row {
+	display: flex;
+	align-items: center;
+	gap: 16px; /* space between image and button */
+	width: 100%;
+}
+
+.upload-box {
+	border: 2px dashed #60a5fa; /* Tailwind blue-400 */
+	background-color: #f0f9ff; /* light blue */
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: border-color 0.3s ease;
+	width: 100%;
+}
+
+.upload-box:hover {
+	border-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.upload-icon {
+	font-size: 2.5rem;
+	color: #9ca3af; /* gray-400 */
+	margin-bottom: 10px;
+}
+
+.upload-text {
+	color: #1f2937; /* gray-800 */
+	font-weight: 500;
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+
+.upload-subtext {
+	color: #6b7280; /* gray-500 */
+	font-size: 0.875rem;
 }
