@@ -1,0 +1,379 @@
+/* Leads Page Header */
+
+.header-container {
+	background-color: #fff;
+	border-top: 3px solid red;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.opportunity-heading {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
+}
+
+.header-container-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.header-container-buttons button {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+}
+
+.cancel-button123 {
+	background-color: #d32f2f;
+	transition: background-color 0.3s;
+}
+
+.cancel-button123:hover {
+	background-color: #b71c1c;
+}
+
+.save-button123 {
+	background-color: #4caf50;
+	transition: background-color 0.3s;
+}
+
+.save-button123:hover {
+	background-color: #388e3c;
+}
+
+.save-and-new-button {
+	background-color: #2196f3;
+	transition: background-color 0.3s;
+}
+
+.save-and-new-button:hover {
+	background-color: #1976d2;
+}
+
+/* Leads Information Basic Structure */
+/* Contact Information Basic Structure */
+/* Lead Qualification Basic Structure */
+
+.opportunity-information-container,
+.contact-information-container,
+.opportunity-qualification-container {
+	background-color: #fff;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.opportunity-information-heading h1,
+.contact-information-heading h1,
+.opportunity-qualification-heading h1 {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
+	padding: 20px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+/* Lead Information Main Content Styles */
+
+.opportunity-information-form form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"opportunityowner accountname primarycontact"
+		"startdate enddate opportunityname"
+		"stage amount status"
+		"leadsource probability type"
+		"description description description";
+	gap: 18px;
+	border-top: 3px solid blue;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.enddate {
+	grid-area: enddate;
+}
+
+.accountname {
+	grid-area: accountname;
+}
+
+.primarycontact {
+	grid-area: primarycontact;
+}
+
+.startdate {
+	grid-area: startdate;
+}
+
+.opportunityowner {
+	grid-area: opportunityowner;
+}
+
+.opportunityname {
+	grid-area: opportunityname;
+}
+
+.stage {
+	grid-area: stage;
+}
+
+.amount {
+	grid-area: amount;
+}
+
+.status {
+	grid-area: status;
+}
+
+.leadsource {
+	grid-area: leadsource;
+}
+
+.probability {
+	grid-area: probability;
+}
+
+.type {
+	grid-area: type;
+}
+
+.description {
+	grid-area: description;
+}
+
+.form-group label {
+	padding: 8px 0;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+	padding: 10px 5px;
+	border: 2px solid #e0e0e0;
+	border-radius: 4px;
+	outline: none;
+}
+
+.form-group input,
+.form-group select {
+	height: 40px;
+}
+
+.form-group textarea {
+	min-height: 60px;
+}
+
+/* Contact Information Main Content Styles */
+
+.contact-information-form123 form {
+	padding: 20px !important;
+	display: grid !important;
+	grid-template-areas:
+		"emailid123 secondaryemail123 phoneno123"
+		"mobileno123 fax123 website123"
+		"addressline1123 addressline2123 city123"
+		"state123 country123 zipcode123" !important;
+	gap: 18px !important;
+}
+
+.emailid123 {
+	grid-area: emailid123;
+}
+
+.secondaryemail123 {
+	grid-area: secondaryemail123;
+}
+
+.phoneno123 {
+	grid-area: phoneno123 !important;
+}
+
+.mobileno123 {
+	grid-area: mobileno123;
+}
+
+.fax123 {
+	grid-area: fax123;
+}
+
+.website123 {
+	grid-area: website123;
+}
+
+.addressline1123 {
+	grid-area: addressline1123;
+}
+
+.addressline2123 {
+	grid-area: addressline2123;
+}
+
+.city123 {
+	grid-area: city123;
+}
+
+.state123 {
+	grid-area: state123;
+}
+
+.country123 {
+	grid-area: country123;
+}
+
+.zipcode123 {
+	grid-area: zipcode123;
+}
+
+/* Lead Qualification Main Content Styles */
+
+.opportunity-qualification-form123 form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"opportunitysource opportunitystatus interestlevel"
+		"budget potentialrevenue .";
+	gap: 18px;
+}
+
+.opportunitysource {
+	grid-area: opportunitysource;
+}
+
+.opportunitystatus {
+	grid-area: opportunitystatus;
+}
+
+.interestlevel {
+	grid-area: interestlevel;
+}
+
+.budget {
+	grid-area: budget;
+}
+
+.potentialrevenue {
+	grid-area: potentialrevenue;
+}
+
+/* Lead Interaction Details Main Content Styles */
+
+.opportunity-interaction-details-form form {
+	padding: 20px;
+	display: grid;
+	grid-template-areas:
+		"interactiontype interactionoutcome interactiondate"
+		"interactionnote interactionnote interactionnote";
+	gap: 18px;
+}
+
+.interactiontype {
+	grid-area: interactiontype;
+}
+
+.interactionoutcome {
+	grid-area: interactionoutcome;
+}
+
+.interactiondate {
+	grid-area: interactiondate;
+}
+
+.interactionnote {
+	grid-area: interactionnote;
+}
+
+.image-container {
+	background-color: #fff;
+	border-top: 3px solid blue;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2), -2px 0 2px rgb(0, 0, 0, 0.2);
+}
+
+/* Container to center the upload card */
+.opportunity-image-upload-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 24px; /* space before the form */
+}
+
+/* The circular placeholder / preview */
+.opportunity-image-placeholder {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #f5f5f5;
+	border: 2px dashed #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+/* When an image is chosen, show it filling the circle */
+.opportunity-image-preview {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-row {
+	display: flex;
+	align-items: center;
+	gap: 16px; /* space between image and button */
+	width: 100%;
+}
+
+.upload-box {
+	border: 2px dashed #60a5fa; /* Tailwind blue-400 */
+	background-color: #f0f9ff; /* light blue */
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: border-color 0.3s ease;
+	width: 100%;
+}
+
+.upload-box:hover {
+	border-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.upload-icon {
+	font-size: 2.5rem;
+	color: #9ca3af; /* gray-400 */
+	margin-bottom: 10px;
+}
+
+.upload-text {
+	color: #1f2937; /* gray-800 */
+	font-weight: 500;
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+
+.upload-subtext {
+	color: #6b7280; /* gray-500 */
+	font-size: 0.875rem;
+}

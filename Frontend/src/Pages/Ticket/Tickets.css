@@ -1,4 +1,4 @@
-Leads Page Header .header-container {
+.header-container {
     background-color: #fff;
     border-top: 3px solid red;
     border-radius: 8px;
@@ -153,4 +153,23 @@ Leads Page Header .header-container {
     .table-header {
         flex-direction: column;
     }
+}
+
+.action-button123 {
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    color: #64748b;
+    padding: 10px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: 500;
+    /* box-shadow: var(--shadow-sm);
+    transition: var(--transition); */
+    height: 40px;
 }

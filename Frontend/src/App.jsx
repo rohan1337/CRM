@@ -52,6 +52,8 @@ import AirtelConnect from "./Pages/Telephone Channels/AirtelConnect";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Login/Signup";
 import ResetPassword from "./Pages/Login/ResetPassword";
+import Opportunities from "./Pages/Opportunity Management/Opportunities";
+import CreateOpportunity from "./Pages/Opportunity Management/CreateOpportunity";
 
 function App() {
 	return (
@@ -66,6 +68,8 @@ function App() {
 					<Route path="/sales/leads" element={<Leads />} />
 					<Route path="/sales/leads/create" element={<CreateNewLead />} />
 					<Route path="/sales/leads/details" element={<DetailedLeads />} />
+					<Route path="/sales/opportunities" element={<Opportunities />} />
+					<Route path="/sales/opportunities/create" element={<CreateOpportunity />} />
 					<Route path="/customers/accounts" element={<CustomerAccount />} />
 					<Route path="/customers/accounts/create" element={<CreateNewAccount />} />
 					<Route path="/customers/accounts/details" element={<DetailedCustomerAccount />} />

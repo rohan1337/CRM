@@ -12,10 +12,10 @@
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px 0 2px rgba(0, 0, 0, 0.2) !important;
 }
 
-.header-title {
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: #000;
+.header-title123 h1 {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #000;
 }
 
 .header-buttons {
@@ -35,21 +35,21 @@
     cursor: pointer;
 }
 
-.cancel-button {
+.cancel-button12 {
     background-color: #d32f2f;
     transition: background-color 0.3s;
 }
 
-.cancel-button:hover {
+.cancel-button12:hover {
     background-color: #b71c1c;
 }
 
-.save-button {
+.save-button12 {
     background-color: #4caf50;
     transition: background-color 0.3s;
 }
 
-.save-button:hover {
+.save-button12:hover {
     background-color: #388e3c;
 }
 
@@ -64,18 +64,18 @@
 
 /* Product Basic Structure */
 
-.form-container {
+.form-container123 {
     background-color: #fff;
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px 0 2px rgba(0, 0, 0, 0.2);
 }
 
-.form-container {
+.form-container123 {
     border-top: 3px solid green;
 }
 
-.form-title h1 {
+.form-title123 h1 {
     font-size: 1.125rem;
     font-weight: 600;
     color: #000;
@@ -91,7 +91,8 @@
     grid-template-areas:
         "account-name primary-contact ticket-type"
         "subject lead-source priority"
-        "amount ticket-status description";
+        "amount ticket-status ."
+        "description description description";
     gap: 18px;
 }
 

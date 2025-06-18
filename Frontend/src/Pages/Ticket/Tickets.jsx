@@ -6,6 +6,7 @@ import {
 	Search,
 	User,
 	ChevronDown,
+    X,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import "./Tickets.css";
@@ -102,30 +103,6 @@ const Tickets = () => {
 							/>
 						</div>
 						<div className="sales-quotes-dropdown-container">
-							{/* <button
-                className="sales-quotes-dropdown-button"
-                onClick={toggleContactsDropdown}
-              >
-                <User size={20} color="#64748b" strokeWidth={2} />
-                <span>All ORG</span>
-                <ChevronDown size={20} color="#64748b" strokeWidth={2} />
-              </button> */}
-							{/* {showcontactDropdown && (
-                <div className="sales-quotes-dropdown-menu">
-                  {contactCategories.map((category) => (
-                    <div
-                      key={category.id}
-                      className="sales-quotes-dropdown-item"
-                    >
-                      <span className="icon-category"></span>
-                      <span>{category.name}</span>
-                      {category.count && (
-                        <span className="count">{category.count}</span>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              )} */}
 							<select
 								name=""
 								id=""
@@ -166,34 +143,10 @@ const Tickets = () => {
 							<Filter size={20} color="#64748b" strokeWidth={2} />
 						</button>
 						<div className="action-button-container">
-							{/* <button
-                                className="modern-button action-button"
-                                onClick={() => setShowActionsModal((prev) => !prev)}
-                            >
-                                Actions
-                                <ChevronDown size={20} color="#64748b" strokeWidth={2} />
-                            </button> */}
-                                            {/* Actions Modal */}
-                                            {/* {showActionsModal && (
-                                <div className="actions-modal-container">
-                                <div className="actions-modal">
-                                    <ul className="actions-modal-list">
-                                    <li>Export</li>
-                                    <li>View All</li>
-                                    <li>Delete</li>
-                                    </ul>
-                                    <select name="" id="">
-                                    <option value="">Export</option>
-                                    <option value="">View All</option>
-                                    <option value="">Delete</option>
-                                    </select>
-                                </div>
-                                </div>
-                            )} */}
 							<select
 								name=""
 								id=""
-								className="modern-button action-button"
+								className="action-button123"
 							>
 								<option value="">Actions</option>
 								<option value="">Assign To Agent</option>
@@ -215,7 +168,7 @@ const Tickets = () => {
 								className="close-filters"
 								onClick={toggleFilters}
 							>
-								×
+								<X size={20} strokeWidth={2} />
 							</button>
 						</div>
 						<div className="filter-row">
@@ -333,7 +286,7 @@ const Tickets = () => {
 												className="display-btn"
 												onClick={() =>
 													navigate(
-														"/service/tickets/displayTicket"
+														"/service/tickets/details"
 													)
 												}
 											>
