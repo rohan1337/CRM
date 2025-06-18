@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './sidebar.css';
 import {
-    BarChart3, Building, Users, ShoppingBag, Briefcase, Contact, Mail, Phone, MessageSquare, Layers, FileText, Settings, Shield, Activity, ChevronDown
+    BarChart3, Building, Users, ShoppingBag, Briefcase, Contact, Mail, Phone, MessageSquare, Layers, FileText, Settings, Shield, Activity, ChevronDown,FileSignature
 } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -113,6 +113,7 @@ const Sidebar = () => {
             path: '/service',
             subMenu: [
                 { name: 'Tickets', path: '/service/tickets', icon: FileText },
+                { name: 'Templates And Signatures', path: '/service/templates', icon: FileSignature },
                 { name: 'Agent Desktop', path: '/service/agentdesktop', icon: Users },
                 { name: 'Knowledge Base', path: '/service/knowledgebase', icon: Layers }
             ]

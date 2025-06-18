@@ -54,6 +54,7 @@ import Signup from "./Pages/Login/Signup";
 import ResetPassword from "./Pages/Login/ResetPassword";
 import Opportunities from "./Pages/Opportunity Management/Opportunities";
 import CreateOpportunity from "./Pages/Opportunity Management/CreateOpportunity";
+import Templates from "./Pages/Templates&signatures/Templates";
 
 function App() {
 	return (
@@ -99,6 +100,7 @@ function App() {
           			<Route path="/service/tickets" element={<Tickets />} />
           			<Route path="/service/tickets/create" element={<CreateTicket />} />
           			<Route path="/service/tickets/details" element={<DisplayTicket/>} />
+					<Route path="/service/templates" element={<Templates />} />
 					<Route path="/service/agentdesktop" element={<AgentSupport />} />
 					<Route path="/service/knowledgebase" element={<KnowledgeBase />} />
 					<Route path="/admin/generalsettings" element={<GeneralSettings />} />
